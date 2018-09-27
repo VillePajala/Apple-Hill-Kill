@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00bbaaa27fb86b14a882cc9890794bca
+  productGUID: d1c3ae0c802cf2b4db42aaeb15761e14
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -569,7 +569,11 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 1
   webGLLinkerTarget: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: CROSS_PLATFORM_INPUT
+    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    14: MOBILE_INPUT
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
@@ -649,8 +653,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: b3c92aa7-e452-4c18-ad7b-336177b28979
-  projectName: Apple Hill Kill
+  cloudProjectId: de75c930-ecd4-4f56-9a1d-3dd73e88a849
+  projectName: Apple Hill Kill (1)
   organizationId: valoraami
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
