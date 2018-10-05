@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LigthController : MonoBehaviour {
     private GameObject sun = null;
-    private GameObject sun2 = null;
+   // private GameObject sun2 = null;
 
     private GameObject light1 = null;
     private GameObject light2 = null;
@@ -27,7 +27,7 @@ public class LigthController : MonoBehaviour {
     void Start () {
 
         this.sun = GameObject.Find("Directional Light");
-        this.sun2 = GameObject.Find("Directional Light2");
+        // this.sun2 = GameObject.Find("Directional Light2");
 
         this.light1 = GameObject.Find("Point Light1");
         this.light2 = GameObject.Find("Point Light2");
@@ -54,10 +54,10 @@ public class LigthController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            if (this.sun.GetComponent<Light>().enabled == false)
+            if (this.light1.GetComponent<Light>().enabled == false)
             {
-                this.sun.GetComponent<Light>().enabled = true;
-                this.sun2.GetComponent<Light>().enabled = true;
+                
+                // this.sun2.GetComponent<Light>().enabled = true;
                 this.light1.GetComponent<Light>().enabled = true;
                 this.light2.GetComponent<Light>().enabled = true;
                 this.light3.GetComponent<Light>().enabled = true;
@@ -74,8 +74,8 @@ public class LigthController : MonoBehaviour {
             }
             else
             {
-                this.sun.GetComponent<Light>().enabled = false;
-                this.sun2.GetComponent<Light>().enabled = false;
+                
+                // this.sun2.GetComponent<Light>().enabled = false;
                 this.light1.GetComponent<Light>().enabled = false;
                 this.light2.GetComponent<Light>().enabled = false;
                 this.light3.GetComponent<Light>().enabled = false;
@@ -90,10 +90,8 @@ public class LigthController : MonoBehaviour {
                 this.light12.GetComponent<Light>().enabled = false;
                 this.light13.GetComponent<Light>().enabled = false;
             }
+
         }
-
-
-
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -106,6 +104,21 @@ public class LigthController : MonoBehaviour {
             {
                 this.reflections1.GetComponent<ReflectionProbe>().enabled = false;
                 this.reflections2.GetComponent<ReflectionProbe>().enabled = false;
+
+            }
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            if (this.sun.GetComponent<Light>().enabled == false)
+            {
+                this.sun.GetComponent<Light>().enabled = true;
+            }
+            else
+            {
+                this.sun.GetComponent<Light>().enabled = false;
 
             }
         }

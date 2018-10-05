@@ -5,8 +5,10 @@ using UnityEngine;
 public class BallController : MonoBehaviour {
 
     public GameObject ballbullet = null;
+    public GameObject ballbullet2 = null;
 
     private GameObject bullet = null;
+    
 
     private float force = 100000f;
     private float rotation = 1000f;
@@ -19,18 +21,43 @@ public class BallController : MonoBehaviour {
 	
 	void Update () {
 
+
+
+       
+
         if (Input.GetButtonUp("Fire1"))
         {
+           Quaternion form = new Quaternion(0f, 45f, 45f, 0f);
+           this.bullet = Instantiate(this.ballbullet, this.GetComponent<Transform>().position, form);
+           this.bullet.GetComponent<Rigidbody>().AddForce(this.GetComponent<Transform>().forward * this.force);
+           this.bullet.GetComponent<Rigidbody>().AddTorque(this.rotationmultiples * this.rotation);
+           Destroy(this.bullet, 10f);
+         
+
+        }
+
+        if (Input.GetButtonUp("Fire2"))
+        {
             Quaternion form = new Quaternion(0f, 45f, 45f, 0f);
-            this.bullet = Instantiate(this.ballbullet, this.GetComponent<Transform>().position, form);
+            this.bullet = Instantiate(this.ballbullet2, this.GetComponent<Transform>().position, form);
             this.bullet.GetComponent<Rigidbody>().AddForce(this.GetComponent<Transform>().forward * this.force);
             this.bullet.GetComponent<Rigidbody>().AddTorque(this.rotationmultiples * this.rotation);
             Destroy(this.bullet, 10f);
         }
 
-           
         
 
 
+
+
+
+
     } //update
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+            Destroy(gameObject);
+
+    }
 }
