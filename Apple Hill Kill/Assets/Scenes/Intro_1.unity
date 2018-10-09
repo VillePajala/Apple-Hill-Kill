@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.23617372, g: 0.26490587, b: 0.3037752, a: 1}
+  m_IndirectSpecularColor: {r: 0.44895834, g: 0.49767196, b: 0.54234475, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -331,7 +331,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.91002536, b: 0.6650944, a: 1}
-  m_Intensity: 2.8
+  m_Intensity: 1.17
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -763,7 +763,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 127, y: -83}
-  m_SizeDelta: {x: 3633, y: 1414.99}
+  m_SizeDelta: {x: 3633, y: 1576.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733165622
 MonoBehaviour:
@@ -799,7 +799,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "MOVEMENT: \tWASD\nLOOK: \tMOUSE\nSHOOT AMMO 1: \tMOUSE LEFT\nSHOOT AMMO
     2: \tMOUSE IRGHT\nTORNADO: \tPRESS AND HOLD G\nHOUSE LIGHTS ON/OFF: \tL\nDAY/NIGHT:
-    \tO\nREFLECTIONS ON/OFF: \tP\nRESTART: \tR"
+    \tO\nREFLECTIONS ON/OFF: \tP\nRESTART: \tR\nQUIT:\tESC"
 --- !u!222 &733165623
 CanvasRenderer:
   m_ObjectHideFlags: 0

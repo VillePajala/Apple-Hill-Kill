@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44726866, g: 0.49580228, b: 0.5403399, a: 1}
+  m_IndirectSpecularColor: {r: 0.44895834, g: 0.49767196, b: 0.54234475, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -263,7 +263,7 @@ ReflectionProbe:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 151635664}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
@@ -327,7 +327,7 @@ Light:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.91002536, b: 0.6650944, a: 1}
@@ -535,7 +535,7 @@ ReflectionProbe:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 552067423}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
@@ -763,7 +763,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 12.41, y: -58}
-  m_SizeDelta: {x: 3633, y: 1847.58}
+  m_SizeDelta: {x: 3633, y: 2020}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733165622
 MonoBehaviour:
@@ -797,28 +797,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-    CONTROLS:
-
-
-    MOVEMENT: WASD
-
-    LOOK: MOUSE
-
-    SHOOT AMMO 1: MOUSE LEFT
-
-    SHOOT AMMO 2: MOUSE IRGHT
-
-    TORNADO: PRESS AND HOLD G
-
-    HOUSE LIGHTS ON/OFF: L
-
-    DAY/NIGHT: O
-
-    REFLECTIONS ON/OFF: P
-
-    RESTART: R'
+  m_Text: "\nCONTROLS:\n\nMOVEMENT: WASD\nLOOK: MOUSE\nSHOOT AMMO 1: MOUSE LEFT\nSHOOT
+    AMMO 2: MOUSE IRGHT\nTORNADO: PRESS AND HOLD G\nHOUSE LIGHTS ON/OFF: L\nDAY/NIGHT:
+    O\nREFLECTIONS ON/OFF: P\nRESTART: R\nQUIT:\tESC"
 --- !u!222 &733165623
 CanvasRenderer:
   m_ObjectHideFlags: 0
