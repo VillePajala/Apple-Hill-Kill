@@ -13,6 +13,7 @@ public class SkyController : MonoBehaviour {
 
 	void Update () {
 
+        // The skybox is being rotated
         this.rotate += Time.deltaTime;
         RenderSettings.skybox.SetFloat("_Rotation", this.rotate);
 		
