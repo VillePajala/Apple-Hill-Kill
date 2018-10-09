@@ -93,7 +93,7 @@ public class LigthController : MonoBehaviour {
 
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (this.reflections1.GetComponent<ReflectionProbe>().enabled == false)
             {

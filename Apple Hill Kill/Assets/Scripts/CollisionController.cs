@@ -5,7 +5,9 @@ using UnityEngine;
 public class CollisionController : MonoBehaviour {
 
     private GameObject score = null;
-    
+
+    private AudioSource[] sounds = null;
+
 
     public float force = 1f;
 
@@ -23,7 +25,8 @@ public class CollisionController : MonoBehaviour {
     void Start () {
 
         this.score = GameObject.Find("PointsPanel");
-        
+        Screen.lockCursor = false;
+        this.sounds = GameObject.Find("AudioController").GetComponents<AudioSource>();
 
 
     } // Start
@@ -34,6 +37,7 @@ public class CollisionController : MonoBehaviour {
 
         if (counter == 1)
         {
+            
             gameObject.GetComponent<MeshCollider>().enabled = false;
             location = gameObject.GetComponent<Transform>().position;
             gameObject.GetComponent<Transform>().position = Vector3.MoveTowards(location, destination, step);
@@ -44,6 +48,7 @@ public class CollisionController : MonoBehaviour {
 
         if (counter == 2)
         {
+            
             gameObject.GetComponent<MeshCollider>().enabled = false;
             location2 = gameObject.GetComponent<Transform>().position;
             gameObject.GetComponent<Transform>().position = Vector3.MoveTowards(location2, destination2, step);
@@ -51,9 +56,18 @@ public class CollisionController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.G))
         {
+            
             gameObject.GetComponent<Transform>().Rotate(0.5f, 0.5f, 0.5f);
 
         }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+
+            this.sounds[3].Play();
+
+        }
+
         if (Input.GetKey(KeyCode.T))
         {
             Destroy(gameObject);
@@ -71,6 +85,7 @@ public class CollisionController : MonoBehaviour {
     {
         if (collision.gameObject.tag == "sphere")
         {
+            this.sounds[2].Play();
             this.score.GetComponent<PointsController>().points += 1;
             counter = 1;
             // gameObject.GetComponent<MeshCollider>().convex = true;
@@ -84,7 +99,8 @@ public class CollisionController : MonoBehaviour {
 
         if (collision.gameObject.tag == "sphere1")
         {
-            this.score.GetComponent<PointsController>().points += 1;
+            this.sounds[2].Play();
+            this.score.GetComponent<PointsController>().points2 += 1;
             counter = 2;
             // gameObject.GetComponent<MeshCollider>().convex = true;
             // gameObject.AddComponent<Rigidbody>();
