@@ -1,4 +1,5 @@
 ![](Apple%20Hill%20Kill/images/Logo.jpg)
+![](Apple%20Hill%20Kill/images/Apple%20Hill%20Kill%207.png)
 # aPPLE hILL Kill
 Apple Hill Kill is a short 3D game where the player can explore a 3D modeled house and "destroy" the building with ammunition.
 
