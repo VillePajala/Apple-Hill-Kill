@@ -1,6 +1,6 @@
 ![](Apple%20Hill%20Kill/images/Logo.jpg)
 
-Apple Hill Kill is a short 3D game where the player can explore a 3D modeled house and "destroy" the building with ammunition. This short game is also developed during a game developement course. The main goals I was concentrating on:
+Apple Hill Kill is a short 3D game where the player can explore a real life 3D modelled house and "destroy" the building with ammunition. The main goals I was concentrating on:
 
 * Building a 3D model of a real world house and importing it to Unity
 * Gamifying the building (FPC)
@@ -18,6 +18,7 @@ If you want to go straight to see the code, click [HERE.](Apple%20Hill%20Kill/As
 ## Tech Used
 
 * Unity 3D
+* SketchUp
 * C#
 
 ## Screenshots
