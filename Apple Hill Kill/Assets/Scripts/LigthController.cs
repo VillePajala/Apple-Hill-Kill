@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LigthController : MonoBehaviour {
 
-    // Creating game objects for all the lighs
     private GameObject sun = null;
     private GameObject sun2 = null;
 
@@ -22,14 +21,11 @@ public class LigthController : MonoBehaviour {
     private GameObject light12 = null;
     private GameObject light13 = null;
 
-    // Game objects for reflection probes
     private GameObject reflections1 = null;
     private GameObject reflections2 = null;
 
 
     void Start () {
-
-        // Finding corresponding game objects
         this.sun = GameObject.Find("Directional Light");
         this.sun2 = GameObject.Find("Directional Light2");
 
@@ -49,20 +45,13 @@ public class LigthController : MonoBehaviour {
 
         this.reflections1 = GameObject.Find("Reflection Probe");
         this.reflections2 = GameObject.Find("Reflection Probe1");
-
-
-    } // Start
+    } 
 
 
     void Update () {
+        if (Input.GetKeyDown(KeyCode.L)) {
+            if (this.light1.GetComponent<Light>().enabled == false) {
 
-        // If the key L is pressed
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            // and if the light 1 is not on
-            if (this.light1.GetComponent<Light>().enabled == false)
-            {
-                // All lights are turned on
                 this.sun2.GetComponent<Light>().enabled = true;
                 this.light1.GetComponent<Light>().enabled = true;
                 this.light2.GetComponent<Light>().enabled = true;
@@ -77,12 +66,8 @@ public class LigthController : MonoBehaviour {
                 this.light11.GetComponent<Light>().enabled = true;
                 this.light12.GetComponent<Light>().enabled = true;
                 this.light13.GetComponent<Light>().enabled = true;
-            } // if
 
-            // if light on is on, all lights turned off
-            else
-            {
-                
+            } else {
                 this.sun2.GetComponent<Light>().enabled = false;
                 this.light1.GetComponent<Light>().enabled = false;
                 this.light2.GetComponent<Light>().enabled = false;
@@ -97,54 +82,30 @@ public class LigthController : MonoBehaviour {
                 this.light11.GetComponent<Light>().enabled = false;
                 this.light12.GetComponent<Light>().enabled = false;
                 this.light13.GetComponent<Light>().enabled = false;
-
-            } // else
-
-        } // if
+            } 
+        }
 
 
-        // If the key P is pressed
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            // And the reflection probe is not on
-            if (this.reflections1.GetComponent<ReflectionProbe>().enabled == false)
-            {
-                // Turn reflections on
+        if (Input.GetKeyDown(KeyCode.P)) {
+            if (this.reflections1.GetComponent<ReflectionProbe>().enabled == false) {
                 this.reflections1.GetComponent<ReflectionProbe>().enabled = true;
                 this.reflections2.GetComponent<ReflectionProbe>().enabled = true;
-            } // if
 
-            // And if the reflection probe is already on
-            else
-            {
-                // Turn reflections off
+            } else {
                 this.reflections1.GetComponent<ReflectionProbe>().enabled = false;
                 this.reflections2.GetComponent<ReflectionProbe>().enabled = false;
+            } 
+        } 
 
-            } // else
-
-        } // if
-
-
-        // If the key O is pressed
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            // And the main directional light is not on
-            if (this.sun.GetComponent<Light>().enabled == false)
-            {
-                // Turn main directional light on
+        if (Input.GetKeyDown(KeyCode.O)) {
+            if (this.sun.GetComponent<Light>().enabled == false) {
                 this.sun.GetComponent<Light>().enabled = true;
-            } // if
-
-            // And if the main directional light is on
-            else
-            {
-                // Turn main directional light on
+            } else {
                 this.sun.GetComponent<Light>().enabled = false;
+            } 
+        } 
+    } 
 
-            } // else
-        } // if
+} 
 
-    } // Update
 
-} // Class

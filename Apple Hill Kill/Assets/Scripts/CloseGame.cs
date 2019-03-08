@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class CloseGame : MonoBehaviour {
 
-	
 	void Start () {
 		
-	} // Start
-	
+	} 
 	
 	void Update () {
-		
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            // Closing the Game
+        if (Input.GetKeyUp(KeyCode.Escape)) {
             Application.Quit();
         }
+	} 
 
-	} // Update
-} // Class
+} 

@@ -7,10 +7,20 @@ Apple Hill Kill is a short 3D game where the player can explore a 3D modeled hou
 * Coding a functional point counting system
 * How to make object react when hit by something
 
+## Play Game
+
 You can download and play the game here: https://villepajala.itch.io/apple-hill-kill
+
+## See Code
 
 If you want to go straight to see the code, click [HERE.](Apple%20Hill%20Kill/Assets/Scripts)
 
+## Tech Used
+
+* Unity 3D
+* C#
+
+## Screenshots
 
 Screenshots:
 
