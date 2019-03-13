@@ -1,11 +1,16 @@
 ![](Apple%20Hill%20Kill/images/Logo.jpg)
 
-Apple Hill Kill is a short 3D game where the player can explore a real life 3D modelled house and "destroy" the building with ammunition. The main goals I was concentrating on:
+Apple Hill Kill is a short 3D game where the player can explore a real life 3D modelled house and "destroy" the building with ammunition. 
 
-* Building a 3D model of a real world house and importing it to Unity
-* Gamifying the building (FPC)
-* Coding a functional point counting system
-* How to make object react when hit by something
+## Features
+
+* 3D model of a real world house
+* Gamifying the building (FPS)
+* Point counting system
+* Every individual obejct reacts when hit by "bullet"
+* Soundscape
+* Shooting system
+* All 3D pieces can be rotated at once with a key press
 
 ## Play Game
 
